@@ -9,8 +9,9 @@ def load_db():
     result = conn.execute(text("select * from jobs"))
     jobs = []
     for row in result.all():
-      jobs.append(row._mapping)
+      jobs.append(dict(row._mapping))
     return jobs
+    
 
 @app.route("/")
 def jobs_page():

@@ -8,4 +8,4 @@ engine = create_engine(connection_string,
                          "ssl_ca": "/etc/ssl/cert.pem"
                        }})
 
-
+    
