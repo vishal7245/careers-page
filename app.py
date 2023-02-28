@@ -25,6 +25,12 @@ Jobs = [
     'id': 4,
     'title': 'Full-Stack Engineer',
     'location': 'Mumbai',
+  },
+  {
+    'id': 5,
+    'title': 'Full-Stack Engineer',
+    'location': 'Mumbai',
+    'salary': '$5'
   }
 ]
 
