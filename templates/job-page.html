@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{job['title']}} - Career</title>
+    {% include 'bootstrap.html' %}
+    <style>
+      .img-banner {
+        width: 100%;
+        object-fit: cover;
+      }
+      .container {
+        width:75%;
+        margin: 0 auto;
+      }
+    </style> 
+  </head>
+  <body>
+    {% include 'nav.html' %}
+    <div class='container img-banner'>
+      <h1 class='text-center mt-2 mb-4'>{{Company_name}} - {{job['title']}}</h1>
+      <img class='img-fluid' src='https://careers-page.vishalonceagain.repl.co/static/banner.jpg' alt='banner' height='320px'>
+    <h3 class="mt-4 mb-2 fw-bold">Title</h3>
+    <p>{{job['title']}}</p>
+    <h3 class="my-2 fw-bold">Location</h3>
+    <p>{{job['location']}}</p>
+    <h3 class="my-2 fw-bold">Salary</h3>
+    <p>{{job['currency']}}{{job['salary']}}</p>
+    <h3 class="my-2 fw-bold">Responsibilities</h3>
+    <p>{{job['responsibilities']}}</p>
+    <h3 class="my-2 fw-bold">Requirements</h3>
+    <p>{{job['requirements']}}</p>
+    </div>
+    {% include 'footer.html' %}
+  </body>
+</html>
